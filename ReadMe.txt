@@ -1,0 +1,2 @@
+#assignment 1: It is been implemented in C# using Visual studio 2013.
+#assignment 2: This is a simple Html - Javascript based RSS feed reader. I have used google API to parse data from the URL feeder.

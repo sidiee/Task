@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html">
+  <title>Siddharth Bachhawat: RSS Feed Reader</title>
+  <meta name="author" content="Siddharth Bachhawat">
+  <link rel="stylesheet" type="text/css" media="all" href="css/styles.css">
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+  <script type="text/javascript" language="javascript" src="js/parser.js"></script>
+  <script type="text/javascript" language="javascript" src="js/utils.js"></script>
+</head>
+
+<body>
+  <div id="header-div">
+  <div class = "text-style" id="current-time"></div>
+  <hr>
+  <div class = "text-style" id="time-spent"></div>
+  </div>
+  
+  <div id="container">
+    <div id="content">
+      <h1>Siddharth Bachhawat: RSS Feed Reader</h1>
+      
+      <div id="reddit-feeder" class="feedcontainer"></div>
+      <hr>
+    </div><!-- @end #content -->
+  </div><!-- @end #container -->
+<script type="text/javascript">
+$(function(){
+  // running custom RSS functions
+  parseRSS('https://www.reddit.com/.rss', '#reddit-feeder');
+  setISODateTime();
+  totalElapsedTime();
+});
+</script>
+</body>
+</html>
